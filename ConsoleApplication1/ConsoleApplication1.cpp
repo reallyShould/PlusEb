@@ -92,10 +92,124 @@ void t12() {
         outer += n;
     }
     cout << outer << endl;
-    
 }
 
-int main()
-{
+void t13() {
+    int sum = 0;
 
+    for (int i = 1; i <= 12; i += 2)
+    {
+        sum += i;
+    }
+
+    cout << "Sum of odd numbers between 0 and 12 = " << sum;
+
+}
+
+void t14() {
+    int arr[20];
+
+    for (int i = 0; i < 20; i++)
+        arr[i] = 2 * i;
+
+    for (int i = 0; i < 20; i++)
+        cout << arr[i] << " ";
+
+}
+
+void t15() {
+    int ar[10];
+    int i = 0;
+    int j = 1;
+    while (i < 10)
+    {
+        if (j & 1)
+        {
+            ar[i] = j;
+            i++;
+        }
+        j++;
+    }
+    for (i = 0; i < 10; i++)
+    {
+        cout << ar[i] << " ";
+    }
+}
+
+void t16() {
+    int arr[10];
+    for (int i = 0; i < 10; i++) {
+        arr[i] = (i + 1) * (i + 1);
+    }
+    for (int i = 0; i < 10; i++) {
+        cout << arr[i] << endl;
+    }
+}
+
+void t17() {
+ 
+    int arr[11];
+
+
+    for (int i = 0; i <= 10; i++)
+        arr[i] = pow(2, i);
+
+
+    for (int i = 0; i <= 10; i++)
+        cout << arr[i] << " ";
+}
+
+void t18() {
+    int Fibonacci[10];
+    Fibonacci[0] = 0;
+    Fibonacci[1] = 1;
+
+    for (int i = 2; i < 10; i++)
+    {
+        Fibonacci[i] = Fibonacci[i - 1] + Fibonacci[i - 2];
+    }
+
+    for (int i = 0; i < 10; i++)
+    {
+        cout << Fibonacci[i] << " ";
+    }
+}
+
+void t19() {
+    int arr[20];
+
+ 
+    for (int i = 0; i < 20; i++) {
+        if (i % 2 == 0)
+            arr[i] = i;
+        else
+            arr[i] = i * i;
+    }
+    for (int i = 0; i < 20; i++)
+        cout << arr[i] << " ";
+}
+
+void t20() {
+
+    const int arrSize = 10;
+
+    int array[arrSize]; 
+
+    for (int i = 0; i < arrSize; i++) 
+    {
+        cout << "Enter the value of the element at index " << i << ": ";
+        cin >> array[i];
+        system("cls");
+    }
+
+    cout << "The array elements are:" << endl;
+    for (int i = 0; i < arrSize; i++)
+    {
+        cout << array[i] << " ";
+    }
+    cout << endl;
+}
+
+void main() {
+    t20();
 }
